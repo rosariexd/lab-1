@@ -13,14 +13,6 @@ public class Student {
         this.grades = grades;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getCourse() {
-        return course;
-    }
-
     public double getAverageGrade() {
         int sum = 0;
         for (int grade : grades) {
@@ -31,5 +23,37 @@ public class Student {
 
     public void increaseCourse() {
         this.course += 1;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+
+    public void setGroup(String group) {
+        this.group = group;
+    }
+
+    public int getCourse() {
+        return course;
+    }
+
+    public void setCourse(int course) {
+        this.course = course;
+    }
+
+    public List<Integer> getGrades() {
+        return grades;
+    }
+
+    public void setGrades(List<Integer> grades) {
+        this.grades = grades;
     }
 }
